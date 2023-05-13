@@ -1,0 +1,174 @@
+main
+  background: #1B3764
+
+header
+  margin-bottom: 45px
+  background: #1B3764
+  padding-top: 20px
+  @media (max-width: 1000px)
+    padding: 0px
+  .container
+    max-width: 1300px
+    margin: 0 auto
+    nav
+      background: #18335F
+      display: flex
+      justify-content: space-between
+      height: 85px
+      .left
+        display: flex
+        align-items: center
+        a
+          height: fit-content
+          .logo
+            height: 85px
+            width: 100%
+          h2
+            margin-left: 10px
+            color: white
+            @media (max-width: 400px)
+              margin: 0
+              font-size: 22px
+      .button
+        display: flex
+        width: 335px
+        height: 100%
+        align-items: center
+        background: #FFCA42
+        font-size: 32px
+        color: #1B3764
+        justify-content: center
+        align-items: center
+        font-weight: 500
+        transition: .2s
+        &:hover
+          background: #ffbf1f
+        @media (max-width: 700px)
+          font-size: 26px
+          width: 230px
+          text-align: center
+        @media (max-width: 500px)
+          width: 130px
+
+
+.opening
+  padding: 0px 10px
+  margin-bottom: 45px
+  @media (max-width: 1150px)
+    padding-bottom: 45px
+  .container
+    max-width: 1300px
+    margin: 0 auto
+    h1
+      font-size: 42px
+      color: white
+      text-align: center
+      margin-bottom: 45px
+      @media (max-width: 600px)
+        font-size: 34px
+    p
+      text-align: center
+      color: white
+      font-weight: 600
+      margin-bottom: 30px
+    section
+      display: flex
+      justify-content: space-between
+      .left
+        width: 70%
+        @media (max-width: 1150px)
+          width: 100%
+        ul
+          color: white
+          &:not(:last-child)
+            margin-bottom: 30px
+          @media (max-width: 800px)
+            font-size: 28px
+            text-align: center
+          li
+            margin-top: 10px
+            margin-left: 60px
+            color: white
+            font-size: 28px
+            @media (max-width: 800px)
+              font-size: 24px
+            @media (max-width: 650px)
+              margin-left: 16px
+      .right
+        width: 30%
+        display: flex
+        justify-content: end
+        @media (max-width: 1150px)
+          display: none
+
+.lesson
+  padding-top: 45px
+  background: white
+  margin-bottom: 45px
+  .container
+    max-width: 1300px
+    margin: 0 auto
+    h2
+      text-align: center
+      font-size: 48px
+      color: #1B3764
+      font-weight: 400
+      margin-bottom: 25px
+    .box
+      display: flex
+      .left
+        width: 48%
+        display: flex
+        justify-content: center
+        .lesson__img
+          object-fit: cover
+          @media (max-width: 1050px)
+            width: 300px
+          @media (max-width: 650px)
+            width: 200px
+          @media (max-width: 450px)
+            width: 150px
+      .right
+        width: 48%
+        @media (max-width: 600px)
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: center
+          justify-content: space-around
+        h3
+          color: #1B3764
+          margin-bottom: 45px
+          text-align: center
+          @media (max-width: 700px)
+            margin-bottom: 10px
+            font-size: 26px
+        ul
+          text-align: center
+
+          li
+            color: #1B3764
+            list-style-type: none
+            @media (max-width: 600px)
+              font-size: 24px
+    .button
+      display: block
+      margin: 45px auto 0px
+      text-align: center
+      color: #1B3764
+      padding: 18px 50px
+      border: 3px solid #ffcd60
+      width: fit-content
+      transition: .2s
+      &:hover
+        background: #ffcd60
+
+.author
+  background: #F5F8FC
+  padding-top: 45px
+  height: 500px
+  .container
+    max-width: 1300px
+    margin: 0 auto
+
+
