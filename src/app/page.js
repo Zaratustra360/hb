@@ -5,6 +5,14 @@ import logo from "/public/img/logo.png";
 import barbaraHi from "/public/img/Barbarahi.png";
 import lesson from "/public/img/lesson.jpg";
 import author from "/public/img/author.jpg";
+import slide1 from "/public/img/slide1.jpg";
+import slide2 from "/public/img/slide2.jpg";
+import slide3 from "/public/img/slide3.jpg";
+import slide4 from "/public/img/slide4.jpg";
+import slide5 from "/public/img/slide5.jpg";
+import slide6 from "/public/img/slide6.jpg";
+import barbaraTeasing from "/public/img/barbaraTeasing.png";
+import Carousel from "@/components/carousel/Carousel";
 
 export default function Home() {
   return (
@@ -125,7 +133,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="method">
         <div className="container">
           <h2>О методике</h2>
@@ -139,6 +146,53 @@ export default function Home() {
             начинают мыслить и говорить на языке, а не просто запоминают слова
             врассыпную, которые потом не могут составить в предложение.
           </p>
+
+          <Carousel
+            img1={slide1}
+            img2={slide2}
+            img3={slide3}
+            img4={slide4}
+            img5={slide5}
+            img6={slide6}
+          />
+        </div>
+      </section>
+
+      <section className="benefit">
+        <div className="container">
+          <h2>Преимущества методики:</h2>
+          <div className="box__benefit">
+            <div className="left">
+              <div className="box">
+                <div className="number">01</div>
+                <div className="desk">
+                  100% Авторские материалы + видеокурс + задания/занятия для
+                  повторения дома
+                </div>
+              </div>
+              <div className="box">
+                <div className="number">02</div>
+                <div className="desk">Озвучка носителями (Великобритания)</div>
+              </div>
+              <div className="box">
+                <div className="number">03</div>
+                <div className="desk">
+                  Прозрачная система партнеров - 3 уровня (доход - 50% дохода
+                  партнера)
+                </div>
+              </div>
+              <div className="box">
+                <div className="number">04</div>
+                <div className="desk">
+                  Онлайн платформа с планами уроков, видео для повторений,
+                  личным кабинетом преподавателя и ученика
+                </div>
+              </div>
+            </div>
+            <div className="right">
+              <Image className="img" src={barbaraTeasing} alt="barbara" />
+            </div>
+          </div>
         </div>
       </section>
     </>
