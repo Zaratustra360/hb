@@ -12,6 +12,9 @@ import slide4 from "/public/img/slide4.jpg";
 import slide5 from "/public/img/slide5.jpg";
 import slide6 from "/public/img/slide6.jpg";
 import barbaraTeasing from "/public/img/barbaraTeasing.png";
+import lamp from "/public/img/lamp.png";
+import finance1 from "/public/img/finance1.png";
+import finance2 from "/public/img/finance2.png";
 import Carousel from "@/components/carousel/Carousel";
 
 export default function Home() {
@@ -195,6 +198,59 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="partners">
+        <div className="container">
+          <Image className="lamp" src={lamp} alt="lamp"></Image>
+          <h2>Что получат наши партнеры?</h2>
+          <ul>
+            <li>Снижение административной и учебной нагрузки</li>
+            <li>Улучшение результатов обучения детей</li>
+            <li>
+              Увеличение выручки: больше клиентов за счет рекомендации
+              родителей, ссылки и контакты с сайта программы www.myhappybara.com
+            </li>
+            <li>
+              Снижение расходов (мягче требования к преподавателям, меньшая
+              нагрузка, оптимизация расписания)
+            </li>
+            <li>
+              Дополнительный бонус: партнерское вознаграждение (100+ тыс.руб. в
+              год)
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="finance">
+        <div className="container">
+          <h2>Целевые финансовые показатели для одного филиала</h2>
+          <p className="desk">
+            2 преподавателя, 120 учеников, две партнерских школы
+          </p>
+          <Image className="img" src={finance1} alt="img" />
+          <p className="desk">
+            10 преподавателей, 600 учеников, две партнерских школы
+          </p>
+          <Image className="img" src={finance1} alt="img" />
+        </div>
+      </section>
+
+      <footer>
+        <div className="container">
+          <p>
+            Присоединяйтесь к нашей программе и улучшайте финасовые показатели
+            вашей школы!
+          </p>
+          <Link
+            target="_blank"
+            className="button"
+            href="https://ru.myhappybara.com/training/view/metodika-myhappybara-dlya-prepodavateley-angliyskogo-detyam-level-1/lesson/lesson-1-zoo"
+          >
+            Перейти к программе
+          </Link>
+        </div>
+      </footer>
     </>
   );
 }
